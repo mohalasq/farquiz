@@ -129,14 +129,13 @@ const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>([
 
 const updateLeaderboard = useCallback((score: number) => {
   const newEntry: LeaderboardEntry = {
-    id: Date.now().toString(),
+    id: Math.random().toString(36).substring(2, 9), // Random string
     name: playerName,
     score: score,
   };
   
   setLeaderboard(prev => {
     const updated = [...prev, newEntry];
-    // Sort by score descending only
     return updated.sort((a, b) => b.score - a.score).slice(0, 50);
   });
 }, [playerName]);
