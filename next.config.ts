@@ -11,14 +11,29 @@ const nextConfig: NextConfig = {
         protocol: 'http',
         hostname: 'localhost',
         port: '3000',
-        pathname: '/**', // Allow all paths from localhost
+        pathname: '/**',
       },
       {
         protocol: 'https',
-        hostname: '**', // Allow all production domains
-        pathname: '/**', // Allow all paths
+        hostname: '*.vercel.app', // Covers all Vercel deployments
+        pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: '*.vercel.app', // Covers Vercel project URLs
+        pathname: '/**',
+      },
+      // Add your custom domain if you have one
+      // {
+      //   protocol: 'https',
+      //   hostname: 'your-custom-domain.com',
+      //   pathname: '/**',
+      // },
     ],
+  },
+  env: {
+    ROOT_URL: process.env.NEXT_PUBLIC_URL ||
+      (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000'),
   },
 };
 
