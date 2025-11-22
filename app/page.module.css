@@ -348,7 +348,7 @@
   font-size: 1.1rem;
   text-align: center;
   transition: all 0.3s ease;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
 }
 
 .nameInput:focus {
@@ -391,3 +391,540 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Add these to your existing styles */
+/* Add these to your existing styles */
+
+.saveScoreSection {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border-radius: 12px;
+  border: 2px solid #1890ff;
+}
+
+.saveButton {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.saveButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+}
+
+.saveButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.saveDescription {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.scoreSavedSection {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 12px;
+  border: 2px solid #059669;
+}
+
+.scoreSavedText {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.currentUser {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white;
+  font-weight: bold;
+}
+
+/* Wallet Section Styles */
+.walletSection {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.connectWalletButton {
+  background: linear-gradient(135deg, #0052FF 0%, #00D4FF 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.connectWalletButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 82, 255, 0.3);
+}
+
+.walletAvatar {
+  width: 24px;
+  height: 24px;
+}
+
+.walletIdentity {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.walletStatus {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.walletConnected {
+  color: #10b981;
+  font-weight: bold;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.walletDisconnected {
+  color: #ef4444;
+  font-weight: bold;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+/* Updated Save Button Styles */
+.saveButtonDisabled {
+  background: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%) !important;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+}
+
+.saveButtonDisabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.saveScoreSection {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border-radius: 12px;
+  border: 2px solid #1890ff;
+}
+
+.saveButton {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.saveButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+}
+
+.saveButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.saveDescription {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.scoreSavedSection {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 12px;
+  border: 2px solid #059669;
+}
+
+.scoreSavedText {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.currentUser {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white;
+  font-weight: bold;
+}
+
+/* Network and Wallet Section Styles */
+.walletSection {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.networkBadge {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(139, 92, 246, 0.3);
+}
+
+.connectWalletButton {
+  background: linear-gradient(135deg, #0052FF 0%, #00D4FF 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.connectWalletButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 82, 255, 0.3);
+}
+
+.walletAvatar {
+  width: 24px;
+  height: 24px;
+}
+
+.walletIdentity {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.networkInfo {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 8px;
+  border: 1px solid #bae6fd;
+}
+
+.networkInfo p {
+  margin: 0;
+  color: #0369a1;
+  font-size: 0.9rem;
+}
+
+.walletStatus {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.walletConnected {
+  color: #10b981;
+  font-weight: bold;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.walletDisconnected {
+  color: #ef4444;
+  font-weight: bold;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+/* Updated Save Button Styles */
+.saveScoreSection {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border-radius: 12px;
+  border: 2px solid #1890ff;
+}
+
+.saveButton {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  min-width: 300px;
+}
+
+.saveButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+}
+
+.saveButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.saveButtonDisabled {
+  background: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%) !important;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+}
+
+.saveButtonDisabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.saveDescription {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.transactionPending {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.scoreSavedSection {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 12px;
+  border: 2px solid #059669;
+}
+
+.scoreSavedText {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 0.5rem 0;
+}
+
+.transactionHash {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-family: monospace;
+}
+
+.currentUser {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white;
+  font-weight: bold;
+}
+
+/* Add these styles to your existing CSS */
+
+.saveButtonError {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+}
+
+.saveButtonError:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+}
+
+.transactionError {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: rgba(239, 68, 68, 0.2);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #dc2626;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* Network Switch Button Styles */
+.networkSwitchButton {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1rem 0;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.networkSwitchButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.networkSubtext {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  font-weight: normal;
+}
+
+/* Updated Save Button Styles */
+.saveButton {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  min-width: 300px;
+}
+
+.saveButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+}
+
+.saveButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.saveButtonDisabled {
+  background: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%) !important;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+}
+
+.saveButtonError {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+}
+
+.saveButtonError:hover:not(:disabled) {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+}
+
+.saveScoreSection {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border-radius: 12px;
+  border: 2px solid #1890ff;
+}
+
+.saveDescription {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.scoreSavedSection {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 12px;
+  border: 2px solid #059669;
+}
+
+.scoreSavedText {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 0.5rem 0;
+}
+
+.transactionHash {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-family: monospace;
+}
+
+.currentUser {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white;
+  font-weight: bold;
+}
+
+/* Network Info Styles */
+.networkInfo {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 8px;
+  border: 1px solid #bae6fd;
+}
+
+.networkInfo p {
+  margin: 0;
+  color: #0369a1;
+  font-size: 0.9rem;
+}
+
+.walletStatus {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.walletConnected {
+  color: #10b981;
+  font-weight: bold;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.walletDisconnected {
+  color: #ef4444;
+  font-weight: bold;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
