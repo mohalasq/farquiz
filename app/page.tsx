@@ -25,7 +25,7 @@ const ROOT_URL =
 
 // Check if testnet is enabled
 const IS_TESTNET = process.env.NEXT_PUBLIC_ENABLE_TESTNET === 'true';
-const TRANSACTION_AMOUNT = IS_TESTNET ? '0.00002' : '0.00003';
+const TRANSACTION_AMOUNT = IS_TESTNET ? '0.00002' : '0.00008';
 const RECIPIENT_ADDRESS = '0x877890628f38B4653Db758c62C02489d8466caF4';
 
 interface QuizQuestion {
@@ -516,22 +516,24 @@ export default function Home() {
         <div className={styles.networkBadge}>
           {IS_TESTNET ? '🧪 Base Sepolia' : '🔷 Base Mainnet'}
         </div>
-        <Wallet>
-          <ConnectWallet
-            className={styles.connectWalletButton}
-          >
-            <Avatar className={styles.walletAvatar} />
-            <Name />
-          </ConnectWallet>
-          <WalletDropdown>
-            <Identity className={styles.walletIdentity} hasCopyAddressOnClick>
-              <Avatar />
+        {IS_TESTNET ? (
+          <Wallet>
+            <ConnectWallet className={styles.connectWalletButton}>
+              <Avatar className={styles.walletAvatar} />
               <Name />
-              <Address />
-            </Identity>
-            <WalletDropdownDisconnect />
-          </WalletDropdown>
-        </Wallet>
+            </ConnectWallet>
+
+            <WalletDropdown>
+              <Identity className={styles.walletIdentity} hasCopyAddressOnClick>
+                <Avatar />
+                <Name />
+                <Address />
+              </Identity>
+
+              <WalletDropdownDisconnect />
+            </WalletDropdown>
+          </Wallet>
+        ) : null}
       </div>
       
       <div className={styles.content}>

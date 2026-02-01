@@ -7,7 +7,7 @@ This is a demo Mini App application built using OnchainKit and the Farcaster SDK
 
 ## Prerequisites
 
-Before getting started, make sure you have:
+Bef   ore getting started, make sure you have:
 
 * Base app account
 * A [Farcaster](https://farcaster.xyz/) account
